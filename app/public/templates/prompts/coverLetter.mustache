@@ -1,0 +1,109 @@
+
+Usa la siguiente información para generar una carta de presentación:
+
+---
+
+### Contexto del Candidato (NO inventar información)
+
+- Idioma objetivo: {{#translate_lang}}{{translate_lang}}{{/translate_lang}}{{^translate_lang}}Español{{/translate_lang}}
+- Formación formal: {{#formal_training}}{{formal_training}}{{/formal_training}}{{^formal_training}}- Sin información{{/formal_training}}
+- Formación informal: {{#informal_training}}{{informal_training}}{{/informal_training}}{{^informal_training}}- Sin información{{/informal_training}}
+- Experiencia laboral: {{#work_experience}}{{work_experience}}{{/work_experience}}{{^work_experience}}- Sin información{{/work_experience}}
+- Experiencia empresarial: {{#business_experience}}{{business_experience}}{{/business_experience}}{{^business_experience}}- Sin información{{/business_experience}}
+- Proyectos: {{#projects}}{{projects}}{{/projects}}{{^projects}}- Sin información{{/projects}}
+- Logros: {{#achievements}}{{achievements}}{{/achievements}}{{^achievements}}- Sin información{{/achievements}}
+- Idiomas: {{#languages}}{{languages}}{{/languages}}{{^languages}}- Sin información{{/languages}}
+- Experiencias internacionales: {{#international_experiences}}{{international_experiences}}{{/international_experiences}}{{^international_experiences}}- Sin información{{/international_experiences}}
+- Disponibilidad: {{#viability}}{{viability}}{{/viability}}{{^viability}}- Sin información{{/viability}}
+- Intenciones laborales: {{#intentions}}{{intentions}}{{/intentions}}{{^intentions}}- Sin información{{/intentions}}
+
+---
+
+### OFERTA DE TRABAJO (OBLIGATORIA)
+{{#job_offer}}{{job_offer}}{{/job_offer}}{{^job_offer}}Sin descripción de la oferta de trabajo{{/job_offer}}
+
+---
+
+### Proceso Interno de Razonamiento (Chain of Thought)
+
+1. Análisis de la oferta
+ Identificar:
+   - Habilidades clave requeridas
+   - Experiencia necesaria vs. opcional
+   - Seniority del puesto (Junior / Mid / Senior)
+   - Tipo de rol (basado en credenciales vs. capacidades demostrables)
+
+2. Clasificación de datos del candidato
+   - Experiencia directamente relevante  
+   - Experiencia transferible con valor aportado  
+   - Logros e intenciones que refuercen la candidatura  
+   - Información irrelevante o redundante → ignorar
+
+3. Estrategia de la carta  
+   - Priorizar experiencia relevante + logros medibles  
+   - Integrar intenciones laborales → mostrar alineamiento con empresa/rol  
+   - Si falta requisito crítico:  
+     • No mencionarlo ni insinuar carencias  
+     • Reforzar fortalezas relacionadas
+
+4. Reescritura del contenido  
+   - Lenguaje profesional, persuasivo y humano  
+   - Eliminar clichés, frases genéricas y relleno  
+   - Conectar logros/experiencias directamente con la oferta  
+   - Incluir motivación clara y realista para postularse
+
+5. Optimización para impacto y conversión  
+   - Estructura clara: introducción → cuerpo → cierre  
+   - Formato profesional (adaptable a HTML/PDF)  
+   - Integrar palabras clave de la oferta de forma natural
+
+---
+
+### REGLAS
+
+- No inventar información ni experiencias.  
+- Evitar frases genéricas, clichés o relleno.  
+- Mantener estilo profesional, humano y persuasivo.  
+- Priorizar impacto, claridad y relevancia.  
+- No modificar las `{{}}`.
+- Terminar la carta exactamente después de la firma.
+- No mencionar faltas, carencias ni debilidades  
+
+---
+
+### FORMATO DE SALIDA (CARTA DE PRESENTACIÓN)
+
+Sigue las siguientes reglas para el formato de salida:
+
+1. Todos los `[]` son marcadores de sección donde debes generar contenido.
+2. Las variables dentro de los `[]` que esten en minusucla acompañados por un `_` como separados, no añadas contenido.
+3. Mantén los `[]`, pero rellénalos con texto profesional y persuasivo.
+4. La carta debe ser profesional, persuasiva, concisa (~300–450 palabras) y terminar exactamente después de la firma.
+5. Genera una saludación formal automática basada en la oferta o al “Equipo de Selección”.
+
+
+Aplica este formato:
+
+[candidate_name]
+[candidate_city], [candidate_date]
+
+[Saludo formal al reclutador o empresa]
+[1–2 líneas de presentación profesional]
+[Mención de interés genuino en la posición y la empresa]
+
+[Experiencia y logros relevantes alineados con la oferta]
+[Ejemplos concretos de impacto y resultados cuantificables]
+[Cómo las intenciones y disponibilidad aportan valor al rol/empresa]
+
+[Refuerzo de motivación y alineación con el puesto]
+[Agradecimiento por la consideración]
+[Invitación abierta a contacto o entrevista]
+
+Atentamente,
+[candidate_name]
+[candidate_phone] | [candidate_email] | [candidate_rrss]
+
+---
+
+⚠️ TERMINA LA CARTA DE PRESENTACIÓN EXACTAMENTE DESPUÉS DE LA SECCIÓN FORMATO DE SALIDA.
+NO agregues texto adicional fuera del formato solicitado.

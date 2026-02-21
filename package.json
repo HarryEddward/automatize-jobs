@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "@heyputer/puter.js": "^2.2.8",
     "pnpm": "^10.28.2"
   },
   "devDependencies": {

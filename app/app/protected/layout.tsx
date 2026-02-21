@@ -5,6 +5,7 @@ import { ThemeSwitcher } from "@/components/theme-switcher";
 import { hasEnvVars } from "@/lib/utils";
 import Link from "next/link";
 import { Suspense } from "react";
+import { FaWandMagicSparkles } from "react-icons/fa6";
 
 export default function ProtectedLayout({
   children,
@@ -16,8 +17,9 @@ export default function ProtectedLayout({
       <div className="flex-1 w-full flex flex-col gap-20 items-center">
         <nav className="w-full flex justify-center border-b border-b-foreground/10 h-16">
           <div className="w-full max-w-5xl flex justify-between items-center p-3 px-5 text-sm">
-            <div className="flex gap-5 items-center font-semibold">
-              <Link href={"/"}>Automatize Jobs</Link>
+            <div className="flex gap-y-5 gap-x-2 items-center font-semibold">
+              <FaWandMagicSparkles />
+              <Link href={"/"}>Magic Jobs</Link>
             </div>
             {!hasEnvVars ? (
               <EnvVarWarning />

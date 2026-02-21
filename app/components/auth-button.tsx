@@ -17,10 +17,10 @@ export async function AuthButton() {
     <div className="flex items-center gap-4">
       Hey, {user.email}!
       <LogoutButton />
-      <Button asChild  variant={"default"}>
+      <Button asChild  variant={"outline"}>
         <Link href="/protected/dashboard/configuration"><IoIosSettings /></Link>
       </Button>
-      <Button asChild  variant={"default"}>
+      <Button asChild  variant={"outline"}>
         <Link href="/protected/dashboard"><RiDashboardFill /></Link>
       </Button>
     </div>
